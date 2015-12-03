@@ -22,3 +22,12 @@ vote_results.each_with_index do |precinct_results, precinct_index|
 
   puts ""
 end
+
+# How many people voted in precinct 1?
+
+# Who was the winning candidate in Precinct 4?
+# How many people voted for Jim Bob?
+# How many people voted for Billy Joe?
+# How many people voted for Sally Jane?
+# How many people voted in total?
+# Who had the most votes?
