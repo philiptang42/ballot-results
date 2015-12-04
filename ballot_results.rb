@@ -24,10 +24,25 @@ vote_results.each_with_index do |precinct_results, precinct_index|
 end
 
 # How many people voted in precinct 1?
+precint_one_total_voters = 0
+vote_results[0].each do |votes|
+  precint_one_total_voters += votes
+end
 
+puts "Precint 1 had #{precint_one_total_voters} votes."
+puts ""
 # Who was the winning candidate in Precinct 4?
+precinct_4_winner = vote_results[3].index(vote_results[3].max)
+
+puts "#{candidates[precinct_4_winner]} won Precinct 4."
+puts ""
 # How many people voted for Jim Bob?
+
+
 # How many people voted for Billy Joe?
+
 # How many people voted for Sally Jane?
+
 # How many people voted in total?
+
 # Who had the most votes?
