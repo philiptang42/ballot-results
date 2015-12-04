@@ -37,7 +37,10 @@ precinct_4_winner = vote_results[3].index(vote_results[3].max)
 puts "#{candidates[precinct_4_winner]} won Precinct 4."
 puts ""
 # How many people voted for Jim Bob?
-
+people_for_jim = 0
+people_for_billy = 0
+people_for_sally = 0
+vote_results.size.times do |precinct_index|
 
 # How many people voted for Billy Joe?
 
