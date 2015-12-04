@@ -41,6 +41,14 @@ people_for_jim = 0
 people_for_billy = 0
 people_for_sally = 0
 vote_results.size.times do |precinct_index|
+  people_for_jim += vote_results[precinct_index][0]
+  people_for_billy += vote_results[precinct_index][1]
+  people_for_sally += vote_results[precinct_index][2]
+end
+
+puts "Jim Bob had #{people_for_jim} votes."
+puts "Billy Joe had #{people_for_billy} votes."
+puts "Sally Jane had #{people_for_sally} votes."
 
 # How many people voted for Billy Joe?
 
