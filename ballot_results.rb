@@ -47,13 +47,16 @@ vote_results.size.times do |precinct_index|
 end
 
 puts "Jim Bob had #{people_for_jim} votes."
-puts "Billy Joe had #{people_for_billy} votes."
-puts "Sally Jane had #{people_for_sally} votes."
 
 # How many people voted for Billy Joe?
+puts "Billy Joe had #{people_for_billy} votes."
 
 # How many people voted for Sally Jane?
+puts "Sally Jane had #{people_for_sally} votes."
+puts ""
 
 # How many people voted in total?
+total_people_voted = people_for_jim + people_for_billy + people_for_sally
+puts "There were #{total_people_voted} votes in total."
 
 # Who had the most votes?
