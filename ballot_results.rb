@@ -29,7 +29,7 @@ vote_results[0].each do |votes|
   precint_one_total_voters += votes
 end
 
-puts "Precint 1 had #{precint_one_total_voters} votes."
+puts "Precinct 1 had #{precint_one_total_voters} votes."
 puts ""
 # Who was the winning candidate in Precinct 4?
 precinct_4_winner = vote_results[3].index(vote_results[3].max)
@@ -60,3 +60,10 @@ total_people_voted = people_for_jim + people_for_billy + people_for_sally
 puts "There were #{total_people_voted} votes in total."
 
 # Who had the most votes?
+if people_for_jim > people_for_billy && people_for_jim > people_for_sally
+  puts "Jim Bob had the most votes with #{people_for_jim}."
+elsif people_for_sally > people_for_jim && people_for_sally > people_for_billy
+  puts "Sally Jane had the most votes with #{people_for_sally}."
+else
+  puts "Billy Joe had the most votes with #{people_for_billy}."
+end
